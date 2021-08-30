@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Measurable-form-Suite]">
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+    <listener class-name="listeners.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="form-MediaTest(failed)">
+    <classes>
+      <class name="tests.DropDwnTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyDropDownTest" invocation-numbers="1 2"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.DropDwnTest -->
+      <class name="tests.RadioBtnTest">
+        <methods>
+          <include name="verifyScoreChk"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.RadioBtnTest -->
+      <class name="tests.InputTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyDateInput"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.InputTest -->
+    </classes>
+  </test> <!-- form-MediaTest(failed) -->
+</suite> <!-- Failed suite [Measurable-form-Suite] -->

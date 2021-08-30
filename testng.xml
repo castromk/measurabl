@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Measurable-form-Suite">
+	<listeners>
+		<listener class-name="listeners.Listeners"></listener>
+		<listener class-name="listeners.ExtentReporterNG"></listener>
+	</listeners>
+	<test thread-count="1" name="form-MediaTest">
+		<classes>
+			<class name="tests.RadioBtnTest" />
+			<class name="tests.ChkBoxTest" />
+			<class name="tests.DropDwnTest" />
+			<class name="tests.InputTest" />
+			<class name="tests.UICheckTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
