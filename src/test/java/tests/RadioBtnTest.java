@@ -50,8 +50,8 @@ public class RadioBtnTest extends BaseTest {
 		}
 	}
 
-	@Test(dataProvider = "energyCombination", description = "Verify whether user is able to select different set of energry label")
-	public void verifyEngeryCombinationRadioBtnChk(HashMap<String, String> energyMap) {
+	@Test(dataProvider = "energyCombination", description = "Verify whether user is able to select different set of energy label")
+	public void verifyEnergyCombinationRadioBtnChk(HashMap<String, String> energyMap) {
 		String water = energyMap.get("Water");
 		String energy = energyMap.get("Energy");
 		String waste = energyMap.get("Waste");
@@ -95,7 +95,7 @@ public class RadioBtnTest extends BaseTest {
 	}
 
 	@DataProvider(name = "energyCombination")
-	public Object[][] getEneryCombination() {
+	public Object[][] getEnergyCombination() {
 		Object[][] energylbl = new Object[][] { { new HashMap<String, String>() {
 			{
 				put("Water", "Yes");

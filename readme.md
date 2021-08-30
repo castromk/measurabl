@@ -1,4 +1,4 @@
-Project Name : **measurable**
+Project Name : **measurabl**
 
 **Project Structure details**<br/>
 pages(src/main/java) : This package is contains all the objects related to one web page <br/>
